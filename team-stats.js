@@ -44,10 +44,8 @@ var resultMaps = [
         createNew: function() {
             return new Team();
         },
-        idProperty: {name: 'id', column: 'id'},
-        properties: [
-            {name: 'name', column: 'name'}
-        ],
+        idProperty: 'id',
+        properties: ['name'],
         associations: [
             {name: 'coach', mapId: 'coachMap', columnPrefix: 'coach_'}
         ],
@@ -57,18 +55,16 @@ var resultMaps = [
     },
     {
         mapId: 'coachMap',
-        idProperty: {name: 'id', column: 'id'},
-        properties: [
-            {name: 'name', column: 'name'}
-        ]
+        idProperty: 'id',
+        properties: ['name']
     },
     {
         mapId: 'playerMap',
         idProperty: {name: 'id', column: 'id'},
         properties: [
-            {name: 'name', column: 'name'},
+            'name',
             {name: 'gamesPlayed', column: 'games_played'},
-            {name: 'points', column: 'points'}
+            'points'
         ]
     }
 ];
