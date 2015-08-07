@@ -30,7 +30,7 @@ Team.prototype.calculateTotalPoints = function() {
     }
 
     return totalPoints;
-}
+};
 
 
 // --------------------------------------------------------
