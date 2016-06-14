@@ -36,7 +36,7 @@ Team.prototype.calculateTotalPoints = function() {
 // --------------------------------------------------------
 // Get team stats
 // --------------------------------------------------------
-var joinjs = require('join-js');
+var joinjs = require('join-js').default;
 
 var resultMaps = [
     {
